@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cst.smart.tnsrlm.sales.SalesRegisterActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Sales Register"
+                android:textStyle="bold" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Date"
+                    android:inputType="date"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/buyerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Buyer Name"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buyer"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/commodity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Commodity"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/obj"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/pricePerKg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Price per Kg"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/purchasedQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Purchased Quantity(kg)"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/size"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/totalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Total Amount ₹"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="Payment Details"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/transdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/bankTransferDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Bank Transfer Date"
+                    android:inputType="date"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transdate"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/soldBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Sold by"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seller"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/warehouseReceiptNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Warehouse Receipt Number"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

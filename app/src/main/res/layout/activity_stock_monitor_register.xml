@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cst.smart.tnsrlm.stockMoniter.StockMonitorRegister">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Stock Monitoring Register"
+                android:textStyle="bold" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/supervisedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Supervised Date"
+                    android:inputType="date"
+                    app:category="date"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/supervisorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Supervisor Name"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/commodity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Commodity"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/variety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Variety"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/commodityQualityParameters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Commodity Quality Parameters"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/moisture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Moisture"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/foreignMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Foreign Material"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="Insect,mold" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Color"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/damaged"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Damaged"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/firstGradePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="First Grade Price"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/firstGradeKg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="First Grade Kg"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/secondGradePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="Second Grade Price"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/secondGradeKg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="Second Grade Kg"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/thirdGradePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="Third Grade Price"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/thirdGradeKg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/gray"
+                        android:hint="Third Grade Kg"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="15dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TNCDW - TNSRLM</string>
+    <string name="select">Select</string>
+    <string name="enter">Enter</string>
+    <string name="selectable">selectable</string>
+    <string name="multiSselectable">multi selectable</string>
+    <string name="locationPermissionAlert">Please Enable this permission to identify  your breeds on the google map by other farmers</string>
+
+</resources>

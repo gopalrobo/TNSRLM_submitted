@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="cst.smart.tnsrlm.farmerdetails.FarmerRegister">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/studentImage"
+                    android:layout_width="70.0dip"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/profile" />
+
+                <ProgressBar
+                    android:id="@+id/progressimg"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3.0dip"
+                android:gravity="center"
+                android:text="Photo"
+                android:textColor="@color/primaryTextColor" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/farmerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Name of the Farmer"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/husbandFatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Husband/Father Name"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Contact"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2.0">
+
+
+                    <ImageView
+                        android:id="@+id/refresh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.8"
+                        android:padding="3.0dip"
+                        android:src="@drawable/ic_refresh_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3">
+
+                        <EditText
+                            android:id="@+id/geotag"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Geo tag"
+                            android:inputType="textMultiLine"
+                            android:maxLines="1"
+                            android:textColorHint="#ffc6c6c6"
+                            android:textSize="@dimen/textsize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="@dimen/textsize" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="@dimen/textsize" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/communityType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Community type"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="SC,ST,MBC,BC,OT" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/typeOfFarming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Type of Farming"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="SF,MF,Big" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/typeofland"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Type of Land"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="Irrigated,Rainfed" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/landType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Land Type"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="Own,Lease" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <cst.smart.tnsrlm.CustomFontEditText
+                    android:id="@+id/deptStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Department Status"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="15dp"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Department status" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/addFarmerTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Cultivated Crops"
+                        android:textAllCaps="false"
+                        android:textColor="#232237"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/addFarmImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_action_addround"
+                        android:tint="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/farmerlists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Name of the Bank"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Branch"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/accountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Account Number"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/accountStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Account start Date"
+                    android:inputType="date"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/ifscCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="IFSC Code"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/createdBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:hint="Created By"
+                    android:inputType="text"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
